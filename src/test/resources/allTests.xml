@@ -3,8 +3,8 @@
 <suite name="UI automation">
     <test name="Running all tests">
         <classes>
-            <class name="TestMan"></class>
-            <class name="TestWoman"></class>
+            <class name="TestMan"/>
+            <class name="TestWoman"/>
         </classes>
     </test>
 </suite>

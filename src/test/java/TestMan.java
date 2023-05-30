@@ -10,7 +10,7 @@ public class TestMan {
     private Man alex;
     private Woman jessica, laura;
 
-    @BeforeClass(groups = "smoke")
+    @BeforeClass(groups = {"smoke"})
     public void setUp() {
         alex = new Man("Alex", "Kryvosheyin", 35, false);
         jessica = new Woman("Jessica", "Simpson", 30, false);
@@ -46,17 +46,17 @@ public class TestMan {
         Assert.assertFalse(alex.married);
     }
 
-    @Test(groups = "smoke")
+    @Test(groups = {"smoke"})
     public void testGetFullName() {
         Assert.assertEquals(alex.getFullName(), "Alex Kryvosheyin");
     }
 
-    @Test(groups = "smoke")
+    @Test(groups = {"smoke"})
     public void testGetAge() {
         Assert.assertEquals(alex.getAge(), 35);
     }
 
-    @Test(groups = "smoke")
+    @Test(groups = {"smoke"})
     public void testSetAge() {
         alex.setAge(45);
         Assert.assertEquals(alex.getAge(), 45);
